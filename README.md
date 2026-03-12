@@ -15,7 +15,7 @@ Verbesserungsvorschläge, Contributions, etc. sind willkommen.<br>
 
 # Anleitung
 - merzzy.exe starten
-- Rechtsklick auf das Merzzy-Symbol in der Taskleiste
+- Rechtsklick auf das Merzzy-Symbol auf der Taskbar (im kleinen ausklappbaren Menü)
 - Starten
 - Effektiver arbeiten, sonst wird Merzzy sauer und fängt an, Sie mit Vorwürfen zu bombardieren. <br>
 - ???
