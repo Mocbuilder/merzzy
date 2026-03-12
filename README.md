@@ -9,7 +9,7 @@ Probieren Sie Merzzy noch heute aus und erleben Sie, <br>
 wie einfach es sein kann, produktiver zu sein !<br>
 
 # Features
-Es ist zwar aktuell nicht schön, aber Merz ist das auch nicht. <br>
+Es ist zwar aktuell nicht schön, aber Merz ist das auch nicht. Verbesserungsvorschläge, Contributions, etc. sind willkommen.<br>
 
 # Anleitung
 - merzzy.exe starten
