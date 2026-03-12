@@ -1,7 +1,9 @@
 using System;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.Media;
+using System.Security.Policy;
 using System.Windows.Forms;
 
 namespace merzzy
@@ -39,6 +41,7 @@ namespace merzzy
             SetupResources();
             SetupTray();
             SetupTimer();
+            StartMonitoring(this, EventArgs.Empty);
         }
 
         void SetupWindow()
@@ -150,10 +153,16 @@ namespace merzzy
                 selectedImages = sadImages;
                 selectedSounds = sadSounds;
             }
-            else if (counter >= 3)
+            else if (counter == 3)
             {
                 selectedImages = angryImages;
                 selectedSounds = angrySounds;
+            }
+            else if (counter == 4)
+            {
+                selectedImages = angryImages;
+                selectedSounds = angrySounds;
+                Process.Start(new ProcessStartInfo { FileName = "https://karriere.mcdonalds.de/jobangebote/15/?title=Restaurant-Mitarbeiter", UseShellExecute = true });
             }
             else
             {
