@@ -8,6 +8,13 @@ Ihre Ziele zu erreichen und Ihren Alltag besser zu strukturieren. <br>
 Probieren Sie Merzzy noch heute aus und erleben Sie, <br>
 wie einfach es sein kann, produktiver zu sein !<br>
 
+# Anleitung
+- merzzy.exe starten
+- Rechtsklick auf das Merzzy-Symbol in der Taskleiste
+- Starten
+- ???
+- Profit (Für Merz und seine Freunde)
+
 # Credits
 - Mocbuilder (der Mann, der mehr arbeiten sollte)<br>
 - Eine unbekannte Merz-Stimm-KI-Instanz (der Bot, der die Wirtschaft nicht rettet, da er gratis war)<br>
