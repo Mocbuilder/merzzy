@@ -1,23 +1,25 @@
 # Merzzy
 Sie wollen produktiver werden ? <br>
 Effizienter arbeiten ? <br>
-Dann ist Merzzy genau das Richtige für Sie ! <br>
+Dann ist Merzzy genau das Richtige fÃ¼r Sie ! <br>
 Merzzy ist eine innovative Software, die sie motiviert die deutsche Wirtschaft zu retten. <br>
-Egal ob im Büro oder zu Hause, Merzzy unterstützt Sie dabei, <br>
+Egal ob im BÃ¼ro oder zu Hause, Merzzy unterstÃ¼tzt Sie dabei, <br>
 Ihre Ziele zu erreichen und Ihren Alltag besser zu strukturieren. <br>
 Probieren Sie Merzzy noch heute aus und erleben Sie, <br>
 wie einfach es sein kann, produktiver zu sein !<br>
 
 # Features
-Es ist zwar aktuell nicht schön, aber Merz ist das auch nicht. Verbesserungsvorschläge, Contributions, etc. sind willkommen.<br>
+Es ist zwar aktuell nicht schÃ¶n, aber Merz ist das auch nicht. <br>
+Auch so wie Merz, kann es fasst nichts, auÃŸer sich beschweren wenn Ihre Maus sich fÃ¼r 5 sekunden nicht bewegt.<br>
+VerbesserungsvorschlÃ¤ge, Contributions, etc. sind willkommen.<br>
 
 # Anleitung
 - merzzy.exe starten
 - Rechtsklick auf das Merzzy-Symbol in der Taskleiste
 - Starten
-- Effektiver arbeiten, sonst wird Merzzy sauer und fängt an, Sie mit Vorwürfen zu bombardieren. <br>
+- Effektiver arbeiten, sonst wird Merzzy sauer und fÃ¤ngt an, Sie mit VorwÃ¼rfen zu bombardieren. <br>
 - ???
-- Profit (Für Merz und seine Freunde)
+- Profit (FÃ¼r Merz und seine Freunde)
 
 # Credits
 - Mocbuilder (der Mann, der mehr arbeiten sollte)<br>
@@ -25,8 +27,8 @@ Es ist zwar aktuell nicht schön, aber Merz ist das auch nicht. Verbesserungsvors
 - Friedrich Merz (der Mann, der die deutsche Wirtschaft retten will)<br>
 
 # Disclaimer
-Dieses Programm ist ein künstlerisches und satirisches Werk.<br>
-Alle dargestellten Inhalte, einschließlich Bildern und Stimmen, sind generiert oder bearbeitet <br>
-und dienen ausschließlich Unterhaltungs- und Kommentarzwecken. <br>
+Dieses Programm ist ein kÃ¼nstlerisches und satirisches Werk.<br>
+Alle dargestellten Inhalte, einschlieÃŸlich Bildern und Stimmen, sind generiert oder bearbeitet <br>
+und dienen ausschlieÃŸlich Unterhaltungs- und Kommentarzwecken. <br>
 Es handelt sich nicht um authentische Aussagen oder Handlungen der abgebildeten Person. <br>
-Dieses Werk fällt unter die Kunst- und Meinungsfreiheit und ist als Satire zu verstehen.
+Dieses Werk fÃ¤llt unter die Kunst- und Meinungsfreiheit und ist als Satire zu verstehen.
