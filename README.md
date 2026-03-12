@@ -8,6 +8,9 @@ Ihre Ziele zu erreichen und Ihren Alltag besser zu strukturieren. <br>
 Probieren Sie Merzzy noch heute aus und erleben Sie, <br>
 wie einfach es sein kann, produktiver zu sein !<br>
 
+# Features
+Es ist zwar aktuell nicht schön, aber Merz ist das auch nicht. <br>
+
 # Anleitung
 - merzzy.exe starten
 - Rechtsklick auf das Merzzy-Symbol in der Taskleiste
