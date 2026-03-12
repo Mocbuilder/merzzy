@@ -15,6 +15,7 @@ Es ist zwar aktuell nicht schön, aber Merz ist das auch nicht. Verbesserungsvors
 - merzzy.exe starten
 - Rechtsklick auf das Merzzy-Symbol in der Taskleiste
 - Starten
+- Effektiver arbeiten, sonst wird Merzzy sauer und fängt an, Sie mit Vorwürfen zu bombardieren. <br>
 - ???
 - Profit (Für Merz und seine Freunde)
 
