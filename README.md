@@ -15,11 +15,12 @@ Verbesserungsvorschläge, Contributions, etc. sind willkommen.<br>
 
 # Anleitung
 - merzzy.exe starten
-- Rechtsklick auf das Merzzy-Symbol auf der Taskbar (im kleinen ausklappbaren Menü)
 - Starten
 - Effektiver arbeiten, sonst wird Merzzy sauer und fängt an, Sie mit Vorwürfen zu bombardieren. <br>
 - ???
 - Profit (Für Merz und seine Freunde)
+
+Im Merzzy-Menü (ausklapbarer Bereich der Taskbar) lässt sich Merz starten, reseten und stoppen. <br>
 
 # Credits
 - Mocbuilder (der Mann, der mehr arbeiten sollte)<br>
