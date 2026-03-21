@@ -13,9 +13,12 @@ namespace merzzy
         System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
         Point lastMousePos;
         DateTime lastMoveTime;
+        DateTime lastFXTime;
 
         int idleSeconds = 5;
+        int fxCooldown= 10;
         int counter = 0;
+        int checkSuccesfullCounter = 0;
 
         NotifyIcon trayIcon;
         ContextMenuStrip trayMenu;
@@ -78,6 +81,7 @@ namespace merzzy
 
             trayMenu.Items.Add("Start", null, StartMonitoring);
             trayMenu.Items.Add("Stop", null, StopMonitoring);
+            trayMenu.Items.Add("Reset", null,   ResetCounter);
             trayMenu.Items.Add("Exit", null, ExitApp);
 
             trayIcon = new NotifyIcon();
@@ -100,6 +104,7 @@ namespace merzzy
         {
             lastMousePos = Cursor.Position;
             lastMoveTime = DateTime.Now;
+            lastFXTime = DateTime.Now;
 
             timer.Start();
         }
@@ -107,6 +112,12 @@ namespace merzzy
         void StopMonitoring(object sender, EventArgs e)
         {
             timer.Stop();
+            counter = 0;
+            this.Hide();
+        }
+
+        void ResetCounter(object sender, EventArgs e)
+        {
             counter = 0;
             this.Hide();
         }
@@ -125,7 +136,18 @@ namespace merzzy
                 lastMoveTime = DateTime.Now;
 
                 if (this.Visible)
+                {
+                    counter--;
+                    checkSuccesfullCounter++;
                     this.Hide();
+                }
+
+            }
+
+            if(checkSuccesfullCounter == 5)
+            {
+                checkSuccesfullCounter = 0;
+                counter = 0;
             }
 
             if ((DateTime.Now - lastMoveTime).TotalSeconds > idleSeconds)
@@ -135,15 +157,29 @@ namespace merzzy
                     counter++;
                     ShowFX();
                 }
+
+                if((DateTime.Now - lastFXTime).TotalSeconds > fxCooldown)
+                {
+                    ShowFX();
+                }
+
+
             }
         }
 
         private void ShowFX()
         {
+            lastFXTime = DateTime.Now;
+
             Image[] selectedImages;
             SoundPlayer[] selectedSounds;
 
-            if (counter == 1)
+            if (counter <= 0)
+            {
+                selectedImages = happyImages;
+                selectedSounds = happySounds;
+            }
+            else if (counter == 1)
             {
                 selectedImages = neutralImages;
                 selectedSounds = neutralSounds;
@@ -158,7 +194,7 @@ namespace merzzy
                 selectedImages = angryImages;
                 selectedSounds = angrySounds;
             }
-            else if (counter == 4)
+            else if (counter >= 4)
             {
                 selectedImages = angryImages;
                 selectedSounds = angrySounds;
