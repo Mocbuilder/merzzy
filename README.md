@@ -6,10 +6,10 @@ Merzzy ist eine innovative Software, die sie motiviert die deutsche Wirtschaft z
 Egal ob im Büro oder zu Hause, Merzzy unterstützt Sie dabei, <br>
 Ihre Ziele zu erreichen und Ihren Alltag besser zu strukturieren. <br>
 Probieren Sie Merzzy noch heute aus und erleben Sie, <br>
-wie einfach es sein kann, produktiver zu sein !<br>
+wie einfach es sein kann, Ineffizienz auszumerzen!<br>
 
 # Features
-Es ist zwar aktuell nicht schön, aber Merz ist das auch nicht. <br>
+Es ist zwar aktuell nicht schön, aber Merz ist das auch nicht.<br>
 Auch so wie Merz, kann es fasst nichts, außer sich beschweren wenn Ihre Maus sich für 5 sekunden nicht bewegt.<br>
 Verbesserungsvorschläge, Contributions, etc. sind willkommen.<br>
 
