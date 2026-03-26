@@ -20,22 +20,22 @@ namespace merzzy
         int counter = 0;
         int checkSuccesfullCounter = 0;
 
-        NotifyIcon trayIcon;
-        ContextMenuStrip trayMenu;
+        NotifyIcon trayIcon = null!;
+        ContextMenuStrip trayMenu = null!;
 
         private Random random = new Random();
 
-        private Image[] neutralImages;
-        private SoundPlayer[] neutralSounds;
+        private Image[] neutralImages = null!;
+        private SoundPlayer[] neutralSounds = null!;
 
-        private Image[] sadImages;
-        private SoundPlayer[] sadSounds;
+        private Image[] sadImages = null!;
+        private SoundPlayer[] sadSounds = null!;
 
-        private Image[] angryImages;
-        private SoundPlayer[] angrySounds;
+        private Image[] angryImages = null!;
+        private SoundPlayer[] angrySounds = null!;
 
-        private Image[] happyImages;
-        private SoundPlayer[] happySounds;
+        private Image[] happyImages = null!;
+        private SoundPlayer[] happySounds = null!;
 
         public Form1()
         {
@@ -51,7 +51,7 @@ namespace merzzy
         {
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new Point(
-                Screen.PrimaryScreen.WorkingArea.Width - this.Width,
+                Screen.PrimaryScreen!.WorkingArea.Width - this.Width,
                 Screen.PrimaryScreen.WorkingArea.Height - this.Height
             );
 
@@ -100,7 +100,7 @@ namespace merzzy
             timer.Tick += CheckMouse;
         }
 
-        void StartMonitoring(object sender, EventArgs e)
+        void StartMonitoring(object? sender, EventArgs e)
         {
             lastMousePos = Cursor.Position;
             lastMoveTime = DateTime.Now;
@@ -109,26 +109,26 @@ namespace merzzy
             timer.Start();
         }
 
-        void StopMonitoring(object sender, EventArgs e)
+        void StopMonitoring(object? sender, EventArgs e)
         {
             timer.Stop();
             counter = 0;
             this.Hide();
         }
 
-        void ResetCounter(object sender, EventArgs e)
+        void ResetCounter(object? sender, EventArgs e)
         {
             counter = 0;
             this.Hide();
         }
 
-        void ExitApp(object sender, EventArgs e)
+        void ExitApp(object? sender, EventArgs e)
         {
             trayIcon.Visible = false;
             Application.Exit();
         }
 
-        void CheckMouse(object sender, EventArgs e)
+        void CheckMouse(object? sender, EventArgs e)
         {
             if (Cursor.Position != lastMousePos)
             {
@@ -222,7 +222,7 @@ namespace merzzy
 
         private void PositionForm()
         {
-            int x = Screen.PrimaryScreen.WorkingArea.Width - this.Width;
+            int x = Screen.PrimaryScreen!.WorkingArea.Width - this.Width;
             int y = Screen.PrimaryScreen.WorkingArea.Height - this.Height;
 
             if (x < 0) x = 0;
