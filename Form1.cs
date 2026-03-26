@@ -130,6 +130,12 @@ namespace merzzy
 
         void CheckMouse(object? sender, EventArgs e)
         {
+            if (checkSuccesfullCounter == 5)
+            {
+                checkSuccesfullCounter = 0;
+                counter = 0;
+            }
+
             if (Cursor.Position != lastMousePos)
             {
                 lastMousePos = Cursor.Position;
@@ -137,17 +143,10 @@ namespace merzzy
 
                 if (this.Visible)
                 {
-                    counter--;
                     checkSuccesfullCounter++;
                     this.Hide();
+                    return;
                 }
-
-            }
-
-            if(checkSuccesfullCounter == 5)
-            {
-                checkSuccesfullCounter = 0;
-                counter = 0;
             }
 
             if ((DateTime.Now - lastMoveTime).TotalSeconds > idleSeconds)
@@ -162,8 +161,6 @@ namespace merzzy
                 {
                     ShowFX();
                 }
-
-
             }
         }
 
@@ -174,27 +171,27 @@ namespace merzzy
             Image[] selectedImages;
             SoundPlayer[] selectedSounds;
 
-            if (counter <= 0)
+            if (counter <= 1)
             {
                 selectedImages = happyImages;
                 selectedSounds = happySounds;
             }
-            else if (counter == 1)
+            else if (counter == 2)
             {
                 selectedImages = neutralImages;
                 selectedSounds = neutralSounds;
             }
-            else if (counter == 2)
+            else if (counter == 3)
             {
                 selectedImages = sadImages;
                 selectedSounds = sadSounds;
             }
-            else if (counter == 3)
+            else if (counter == 4)
             {
                 selectedImages = angryImages;
                 selectedSounds = angrySounds;
             }
-            else if (counter >= 4)
+            else if (counter >= 5)
             {
                 selectedImages = angryImages;
                 selectedSounds = angrySounds;
